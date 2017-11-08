@@ -63,7 +63,7 @@ text.with.semicolon:
 public class CommonLocalize {
   private static final Localize ourLocalize = Localize.load(this);
   
-  LocalizeKey MAYBE_TITLE = new LocalizeKey(ourLocalize, "maybe.title")
+  public static final LocalizeKey MAYBE_TITLE = new LocalizeKey(ourLocalize, "maybe.title")
 }
 ```
  
