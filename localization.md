@@ -27,14 +27,15 @@
  CommonLocalize.yaml
  
  ```yaml
- --- 
+--- 
 maybe.action: 
   text: "Maybe ?"
 message.with.mnenonic: 
   text: dada&gdsdsgsdgds
 settings.title: 
-  os.mac: 
-    text: Preferences
+  condition:
+    expression: "os == mac"
+    text: Prefereces
   text: Settings
 text.with.arg: 
   text: "Label: {0}"
