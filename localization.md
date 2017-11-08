@@ -17,6 +17,7 @@
      * [X] java resource bundle
      * [ ] xml 
      * [ ] yaml
+   * generate Java file with keys
      
  # Result
  ### YAML
@@ -39,6 +40,15 @@ text.with.semicolon:
 
  ```
  # Localize API
+ LocalizeKey.java
+ ```java
+ public interface LocalizeKey  {
+   String getValue();
+   
+   String getValue(Locale locale);
+ }
+ ```
+ 
 
  # YAML to Java generator
  
