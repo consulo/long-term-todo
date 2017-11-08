@@ -56,6 +56,12 @@ text.with.arg:
  }
  ```
  
+ LocalizeKeyAsValue.java
+ ```java
+ public interface LocalizeKeyAsValue extends LocalizeVaue, LocalizeKey {
+ }
+ ```
+ 
  LocalizeValue.java
  ```java
  public interface LocalizeValue {
