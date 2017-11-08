@@ -64,10 +64,6 @@ text.with.arg:
    String getValue(Locale locale);
  }
  ```
- 
-## Limitations
- * Max argument value is 5
-
 
  # YAML to Java generator
  
@@ -75,6 +71,7 @@ text.with.arg:
   * must be placed at `/src/main/resources/localize` directory
   * unique name per application (like use plugin prefixes, JavaLocalize, CSharpLocalize, etc)
   * generated class will be placed in **localize** package with same name as **yaml** file (without extension)
+  * Max argument value is 5
  
  /messages/CommonLocalize.java
 ```java
