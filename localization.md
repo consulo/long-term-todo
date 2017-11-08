@@ -44,14 +44,24 @@ text.with.arg:
  LocalizeKey.java
  ```java
  public interface LocalizeKey  {
+   LocalizeValue getValue(Object arg);
    
+   LocalizeValue getValue(Object arg0, Object arg1);
+   
+   LocalizeValue getValue(Object arg0, Object arg1, Object arg2);
+   
+   LocalizeValue getValue(Object arg0, Object arg1, Object arg2, Object arg3);
+   
+   LocalizeValue getValue(Object arg0, Object arg1, Object arg2, Object arg3, Object arg4);
  }
  ```
  
  LocalizeValue.java
  ```java
  public interface LocalizeValue {
-   String getValue()
+   String getValue();
+   
+   String getValue(Locale locale);
  }
  ```
 
@@ -67,7 +77,7 @@ text.with.arg:
 public class CommonLocalize {
   private static final Localize ourLocalize = Localize.load(this);
   
-  private static final LocalizeKey ourMaybeTitleKey = new LocalizeKey(ourLocalize, "maybe.title");
+  private static final LocalizeKeyAsValue ourMaybeTitleKey = new LocalizeKeyAsValue(ourLocalize, "maybe.title");
   
   public static LocalizeValue maybeTitle() {
      return ourMaybeTitleKey;
@@ -76,7 +86,7 @@ public class CommonLocalize {
   private static LocalizeKey ourTextWithArgKey = new LocalizeKey(ourLocalize, "text.with.arg");
   
   public static LocalizeValue textWithArg(Object arg) {
-     return new LocalizeKey
+     return ourTextWithArgKey.getValue(arg);
   }
 }
 ```
