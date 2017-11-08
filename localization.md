@@ -123,11 +123,9 @@ Plugin can provide **default** localize and few others like
 
 File tree:
 
-* src/
-  * main/
-    * resources/
-      * localize/
-        * default/
-          * CommonLocaize.yaml
-        * ru_RU/
-          * CommonLocalize.yaml
+* src/main/resources
+  * localize/
+    * default/
+      * CommonLocaize.yaml
+    * ru_RU/
+      * CommonLocalize.yaml
