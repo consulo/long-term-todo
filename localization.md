@@ -129,3 +129,7 @@ File tree:
       * CommonLocaize.yaml
     * ru_RU/
       * CommonLocalize.yaml
+      
+### Noone can't change default localize, or change localize from already defined localize file (do not create race of files)
+
+Any plugin with /localize/ directory will be registered as provider of localization
