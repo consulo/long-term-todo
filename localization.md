@@ -1,4 +1,4 @@
-required: 
+# Want
   * allow to set key -> value mapping
      * [X] java resource bundle
      * [X] xml 
@@ -18,7 +18,7 @@ required:
      * [ ] xml 
      * [ ] yaml
  
- # Java Resource bundle 
+ # Java Resource Bundle 
  
  ```properties
  settings.title=Settings
