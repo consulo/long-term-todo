@@ -39,7 +39,7 @@ settings.title:
   text: Settings
 text.with.arg: 
   args: 
-    arg0: int
+    0: int
   text: "Label: {0}"
 
  ```
