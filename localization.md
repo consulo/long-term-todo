@@ -24,6 +24,7 @@
 
  
  # YAML
+ CommonLocalize.yaml
  
  ```yaml
  --- 
@@ -57,8 +58,12 @@ text.with.semicolon:
   * unique name per application (like use plugin prefixes, JavaLocalize, CSharpLocalize, etc)
   * generated class will be placed in **localize** package with same name as **yaml** file (without extension)
  
- 
+ /messages/CommonLocalize.java
 ```java
-
+public class CommonLocalize {
+  private static final Localize ourLocalize = Localize.load(this);
+  
+  LocalizeKey MAYBE_TITLE = new LocalizeKey(ourLocalize, "maybe.title")
+}
 ```
  
