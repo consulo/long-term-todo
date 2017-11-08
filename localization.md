@@ -74,7 +74,7 @@ text.with.arg:
  # YAML to Java generator
  
  Rules:
-  * must be placed at `/src/main/resources/localize` directory
+  * must be placed at `/src/main/resources/localize/default` directory
   * unique name per application (like use plugin prefixes, JavaLocalize, CSharpLocalize, etc)
   * generated class will be placed in **localize** package with same name as **yaml** file (without extension)
   * Max argument value is 5 (do not use varargs for creating dummy object arrays)
@@ -117,3 +117,15 @@ In plugin.xml will be option for usage localize keys
   <toolWindow id="Project" titleKey="toolwindow.project.title" />
 ```
  
+# Plugin Override Logic
+
+Plugin can provide **default** localize and few others like
+
+File tree:
+
+* src
+  * main
+     * resources
+        * 
+
+
