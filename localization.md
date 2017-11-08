@@ -97,4 +97,18 @@ public class CommonLocalize {
   }
 }
 ```
+
+# Usage
+
+```java
+// UI API must create option for set String or LocalizeValue 
+
+Label label = Label.create(CommonLocalize.maybeTitle());
+
+for Swing and others it will be more painfull
+
+
+JLabel label = new JLabel(CommonLocalize.maybeTitle().getValue());
+
+```
  
