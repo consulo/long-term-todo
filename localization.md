@@ -64,6 +64,10 @@ text.with.arg:
    String getValue(Locale locale);
  }
  ```
+ 
+## Limitations
+ * Max argument value is 5
+
 
  # YAML to Java generator
  
