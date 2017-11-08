@@ -17,13 +17,10 @@
      * [X] java resource bundle
      * [ ] xml 
      * [ ] yaml
- 
- # Java Resource Bundle 
- 
- ```properties
- settings.title=Settings
- settings.title.mac=Preferences
- ```
+     
+ # Result
+ ### YAML
+
  
  # YAML
  
@@ -41,3 +38,17 @@ text.with.semicolon:
   text: "Label:"
 
  ```
+ # Localize API
+
+ # YAML to Java generator
+ 
+ Rules:
+  * must be placed at `/src/main/resources/localize` directory
+  * unique name per application (like use plugin prefixes, JavaLocalize, CSharpLocalize, etc)
+  * generated class will be placed in **localize** package with same name as **yaml** file (without extension)
+ 
+ 
+```java
+
+```
+ 
