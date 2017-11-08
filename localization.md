@@ -33,8 +33,8 @@ maybe.action:
 message.with.mnenonic: 
   text: dada&gdsdsgsdgds
 settings.title: 
-  os: 
-    mac: Preferences
+  os.mac: 
+    text: Preferences
   text: Settings
 text.with.arg: 
   text: "Label: {0}"
