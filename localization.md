@@ -36,20 +36,24 @@ settings.title:
   os: 
     mac: Preferences
   text: Settings
-text.with.semicolon: 
-  text: "Label:"
+text.with.arg: 
+  text: "Label: {0}"
 
  ```
  # Localize API
  LocalizeKey.java
  ```java
  public interface LocalizeKey  {
-   String getValue();
    
-   String getValue(Locale locale);
  }
  ```
  
+ LocalizeValue.java
+ ```java
+ public interface LocalizeValue {
+   String getValue()
+ }
+ ```
 
  # YAML to Java generator
  
@@ -63,7 +67,17 @@ text.with.semicolon:
 public class CommonLocalize {
   private static final Localize ourLocalize = Localize.load(this);
   
-  public static final LocalizeKey MAYBE_TITLE = new LocalizeKey(ourLocalize, "maybe.title")
+  private static final LocalizeKey ourMaybeTitleKey = new LocalizeKey(ourLocalize, "maybe.title");
+  
+  public static LocalizeValue maybeTitle() {
+     return ourMaybeTitleKey;
+  }
+  
+  private static LocalizeKey ourTextWithArgKey = new LocalizeKey(ourLocalize, "text.with.arg");
+  
+  public static LocalizeValue textWithArg(Object arg) {
+     return new LocalizeKey
+  }
 }
 ```
  
