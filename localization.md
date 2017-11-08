@@ -18,6 +18,14 @@ required:
      * [ ] xml 
      * [ ] yaml
  
+ # Java Resource bundle 
+ 
+ ```properties
+ settings.title=Settings
+ settings.title.mac=Preferences
+ ```
+ 
+ # YAML
  
  ```yaml
  --- 
