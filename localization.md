@@ -100,15 +100,20 @@ public class CommonLocalize {
 
 # Usage
 
+In Java
 ```java
 // UI API must create option for set String or LocalizeValue 
 
 Label label = Label.create(CommonLocalize.maybeTitle());
 
-for Swing and others it will be more painfull
-
+// for Swing and others it will be more painfull
 
 JLabel label = new JLabel(CommonLocalize.maybeTitle().getValue());
 
+```
+
+In plugin.xml will be option for usage localize keys
+```xml
+  <toolWindow id="Project" titleKey="toolwindow.project.title" />
 ```
  
