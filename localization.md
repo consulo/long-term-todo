@@ -23,7 +23,7 @@
  ### YAML
 
  
- # YAML
+ # Syntax
  CommonLocalize.yaml
  
  ```yaml
@@ -38,6 +38,8 @@ settings.title:
     text: Prefereces
   text: Settings
 text.with.arg: 
+  args: 
+    arg0: int
   text: "Label: {0}"
 
  ```
