@@ -1,4 +1,4 @@
-Current classloader rules
+Current loader
 
 distribution:
 ```
