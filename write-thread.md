@@ -2,7 +2,7 @@ By historical reason - all write actions in IDEA(Consulo) must be wrapped in AWT
 
 Why this bad
  * long write actions block interface (for example FS event handling)
- * most operations are synchronous
+ * most operations are synchronous (AWT show)
  * when work on web-server, AWT thread must be replaced per Application (since more than one Application can exists in on JVM instance)
 
 Changes:
