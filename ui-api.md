@@ -9,7 +9,7 @@ Classes:
  * ```consulo.ui.UIAccess``` - class provide access to UI Thread, and allow get current thread status
    * ```#isUIThread()``` - will return true if we inside UI Thread
    * ```#give(Runnable)``` - run task inside UI Thread
-   * ```#get()``` - will return UIAccess instance if call inside UI thread, otherwise throw exception
+   * ```#current()``` - will return UIAccess instance if call inside UI thread, otherwise throw exception
 
 
 
