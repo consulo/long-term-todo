@@ -81,6 +81,7 @@ text.with.arg:
   * unique name per application (like use plugin prefixes, JavaLocalize, CSharpLocalize, etc)
   * generated class will be placed in **localize** package with same name as **yaml** file (without extension)
   * Max argument value is 5 (do not use varargs for creating dummy object arrays)
+  * `Bundle` replaced to `Localize` at end
  
  /messages/CommonLocalize.java
 ```java
