@@ -1,3 +1,5 @@
+# State: Implemented
+
 Consulo provide UI API - implementation will be work at Desktop & Web Browsers. Consulo UI API is not compatible to Swing or Vaadin
 
 Desktop implementation based on **Swing**, and Web on **GWT** (with **Vaadin** as transport + ui system)
@@ -14,6 +16,4 @@ Classes:
 
 
 ### Different Swing vs Consulo API
- * Showing dialogs **not block current thread**
-
-# State: Implemented
+* Showing dialogs **not block current thread**
