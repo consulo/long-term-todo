@@ -1,4 +1,6 @@
-# Current loader:
+# State: Implemented
+
+### Current loader:
 
 platform distribution:
 ```
@@ -15,7 +17,7 @@ platform distribution:
 
 4. Plaform classes have hardcoded pluginID **com.intellij** it means, desktop plugins can't throw exception with own pluginID - it will be always platform ID
 
-# New loader
+### New loader
 
  * extract boot part from main loader - do not duplicate it 
  * desktop & web modules must have own pluginID - not platform
